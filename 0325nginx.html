@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>고움아 안녕</title>
+    <style>
+
+        *{
+            margin: 0;
+            padding: 0;
+        }
+
+        body{
+            font-family: sans-serif;
+            background-color: #f0f0f0;
+            padding: 20px;
+        }
+
+        .card-container{
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: 20px;
+        }
+
+        .card{
+            background-color: white;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 2px 8px rhba(0,0,0,0.1);
+        }
+
+        .card img{
+            width: 100%;
+            height: 180px;
+            object-fit: cover;
+        }
+
+        .card-content{
+            padding: 15px;
+        }
+
+        .card-content h3{
+            margin-bottom: 8px;
+            color: #333;
+        }
+
+        .card-content p{
+            color: #666;
+            font-size: 14px;
+            line-height: 1.5;
+        }
+
+        .card-content button{
+            margin-top: 12px;
+            padding: 8px 16px;
+            background-color: #333;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .card-content button:hover{
+            background-color: orange;
+        }
+
+        @media (max-width: 768px){
+            .card-container{
+                grid-template-columns: 1fr 1fr;
+            }
+        }
+
+        @media (max-width: 480px){
+            .card-container{
+                grid-template-columns: 1fr;
+            }
+        }
+
+
+    </style>
+</head>
+<body>
+
+    <h2>연습 중</h2>
+    <br>
+
+    <div class="card-container">
+
+        <div class="card">
+            <img src="http://picsum.photos/400/300?random=1" alt="랜덤 이미지1">
+            <div class="card-content">
+                <h3>[속보] 고움이 바보</h3>
+                <p>많이 먹어라! 더 먹어라! 더 많이 먹어라!</p>
+                <button>더보기</button>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="http://picsum.photos/400/300?random=2" alt="랜덤 이미지2">
+            <div class="card-content">
+                <h3>혜민이를 구하라</h3>
+                <p>억울하게 회사에 갇힌 혜민이를 석방시켜라</p>
+                <button>더보기</button>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="http://picsum.photos/400/300?random=3" alt="랜덤 이미지3">
+            <div class="card-content">
+                <h3>매정하고 차가운 영영이</h3>
+                <p>좆뺑이쳐라 넌 친구도 아니다</p>
+                <button>더보기</button>
+            </div>
+        </div>
+
+    </div>
+    
+</body>
+</html>
